@@ -6,16 +6,16 @@ export default () => {
       showResultEls[i].addEventListener(`click`, function () {
 
         // анимация слова Победа
-        let imgEls = document.querySelectorAll(`.js-victory`);
-        imgEls.forEach(function(imgEl) {
-          let pathEls = document.querySelectorAll(`.js-victory path`);
-          let paths = [];
-          pathEls.forEach(function (item) {
-            paths.push(item.getTotalLength());
-          });
-
-          imgEl.style.setProperty(`--path`, Math.max(...paths));
-        });
+        // let imgEls = document.querySelectorAll(`.js-victory`);
+        // imgEls.forEach(function(imgEl) {
+        //   let pathEls = document.querySelectorAll(`.js-victory path`);
+        //   let paths = [];
+        //   pathEls.forEach(function (item) {
+        //     paths.push(item.getTotalLength());
+        //   });
+        //
+        //   imgEl.style.setProperty(`--path`, Math.max(...paths));
+        // });
 
 
         let target = showResultEls[i].getAttribute(`data-target`);
